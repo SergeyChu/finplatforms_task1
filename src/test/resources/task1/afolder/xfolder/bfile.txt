@@ -1,0 +1,3 @@
+bfilecontent1
+bfilecontent2
+bfilecontent3
