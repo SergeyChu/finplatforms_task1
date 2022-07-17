@@ -5,15 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
-import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 public class Task1 {
-
     public static final String HELP_MESSAGE = "Please specify exactly one argument with correct absolute path to the root folder";
     public static final String INCORRECT_PATH_MESSAGE = "The specified path doesn't exist";
     public static final String OUTPUT_FILE_NAME = "output.txt";
-    private static final Logger lg = Logger.getLogger(Task1.class.getName());
 
     public static void main(String... args) throws IOException {
 
@@ -38,7 +35,7 @@ public class Task1 {
                     .forEach(path -> readAndAppendContent(path, fileWriter));
         }
 
-        lg.info("Done, please check " + outFilePath);
+        System.out.println("Done, please check " + outFilePath);
     }
 
     private static boolean checkPathExists(String absolutePath) {

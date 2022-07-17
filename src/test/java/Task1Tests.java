@@ -11,7 +11,6 @@ import java.util.List;
 
 
 class Task1Tests {
-
     private final Path currentPath = Paths.get("src").resolve("test")
             .resolve("resources").resolve("task1").toAbsolutePath();
 
